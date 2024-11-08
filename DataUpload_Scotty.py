@@ -24,7 +24,7 @@ data = f"<dataStore><name>{store_name}</name></dataStore>"
 requests.post(store_url, auth=(username, password), headers=headers, data=data)
 
 # Upload GeoPackage
-geopackage_path = r"C:\Users\sahar\ELIA GROUP\GridBird - Python\GIS_Data\Geopackage_example.gpkg"  # Replace with your GeoPackage path
+geopackage_path = r"C:\Users\sahar\GIS_Data\Geopackage_example.gpkg"  # Replace with your GeoPackage path
 store_url = f"{geoserver_url}/rest/workspaces/{workspace_name}/datastores/{store_name}/file.gpkg"
 with open(geopackage_path, "rb") as f:
     requests.put(store_url, auth=(username, password), headers=headers, data=f)

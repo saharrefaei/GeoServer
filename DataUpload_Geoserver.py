@@ -284,7 +284,7 @@ def get_auth_from_user():
 def main():
     global auth
     base_url = r"http://localhost:8080/geoserver" #replace with your host
-    sld_folder = r"C:\Users\sahar\ELIA GROUP\GridBird - Python\GIS_Data\styles" # replace with your style's files location
+    sld_folder = r"C:\Users\sahar\GIS_Data\styles" # replace with your style's files location
 
     auth = get_auth_from_user()
 
